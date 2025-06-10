@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
+}
+main{
+    display: grid;
+    grid-template-columns: 80vh;
+    
+    grid-template-areas: "place"
+                        "why"
+                        "when"
+                        "wishes";
+}
+#why{
+    grid-area: "why";
+}
+#when{
+    grid-area: "when";
+}
+#wishes{
+    grid-area: "wishes";
+}
+#place{
+    grid-area: "place";
+}
+.card{
+    text-align: center;
+    border: 3px solid rgb(7, 167, 1);
+    border-radius: 20px;
+    margin: 5vh 0;
+    background-color: white;
+    padding: 5vh;
+}
+#frame{
+    width: 100%;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+p{
+    font-size: 24px;
+}
+@media(max-width:800px){
+    p{
+        font-size: 20px;
+        white-space: normal;
+        word-break:keep-all;
+        hyphens:none;
+        
+    }
+    h1{
+    font-size: 30px;
+    white-space: normal;
+        word-break:keep-all;
+        hyphens:none;
+}
+    h2{
+        font-size: 25px;
+        white-space: normal;
+        word-break:keep-all;
+        hyphens:none;
+    }
+    .card{
+        padding:3vh 0;
+        
+    }
+}
+
+@media(max-width:500px){
+    p{
+        font-size:16px;
+        
+    }
+    h1{
+    font-size: 25px;
+}
+    h2{
+        font-size: 20px;
+    }
+}
+@media(max-width:320px){
+    p{
+        font-size: 12px;
+    }
+    h1{
+    font-size: 20px;
+}
+    h2{
+        font-size: 16px;
+    }
+}
